@@ -8,8 +8,8 @@
   "devDependencies": {
     "@types/jest": "~27.0.3",
     "@types/node": "~16.11.11",
-    "@typescript-eslint/eslint-plugin": "~5.5.0",
-    "@typescript-eslint/parser": "~5.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
     "eslint": "~8.3.0",
     "eslint-config-prettier": "~8.3.0",
     "eslint-plugin-jest": "~25.3.0",
@@ -27,12 +27,15 @@
     "build": "tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "eslint . --ext .ts,.tsx",
-    "test": "jest --coverage",
+    "test:coverage": "jest --coverage",
+    "test": "jest",
     "test:watch": "jest --watch"
   },
   "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "mathjs": "^10.0.0",
+    "matrix-transpose": "^1.0.2",
     "tslib": "~2.3.1"
   },
   "volta": {
