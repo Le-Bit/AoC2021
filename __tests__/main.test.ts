@@ -2,6 +2,7 @@ import { day1star1, day1star2 } from '../src/day1';
 import { day2star1, day2star2 } from '../src/day2';
 import { day3star1, day3star2 } from '../src/day3';
 import { day4star1, day4star2 } from '../src/day4';
+import { day5star1 } from '../src/day5';
 
 describe('aoc2021', () => {
 
@@ -39,5 +40,9 @@ describe('aoc2021', () => {
 
   it('exec day4star2', () => {
     expect(day4star2('./inputs/test4')).toBe(1924);
+  });
+
+  it('exec day5star1', () => {
+    expect(day5star1('./inputs/test5')).toBe(5);
   });
 });
