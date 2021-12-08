@@ -99,6 +99,5 @@ export function day5star2(filename: string){
   const yMax = getyMax(vectors);
   let resultMap = drawMap(vectors, xMax, yMax);
   resultMap = drawMapDiagonal(vectors, xMax, yMax, resultMap);
-  printMap(resultMap);
   return resultMap.flat().filter(e => e >= 2).length;
 }

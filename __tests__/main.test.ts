@@ -5,7 +5,7 @@ import { day4star1, day4star2 } from '../src/day4';
 import { day5star1, day5star2 } from '../src/day5';
 import { day6star1 } from '../src/day6';
 import { day7star1, day7star2 } from '../src/day7';
-import { day8star1, } from '../src/day8';
+import { day8star1, day8star2} from '../src/day8';
 
 describe('aoc2021', () => {
 
@@ -58,21 +58,20 @@ describe('aoc2021', () => {
     expect(day6star1('./inputs/test6', 256)).toBe(26984457539);
   });
 
-  it('exec day8star1', () => {
-    expect(day8star1('./inputs/test8')).toBe(26);
-  });
-
   it('exec day7star1', () => {
     expect(day7star1('./inputs/test7')).toBe(37);
   });
 
   it('exec day7star2', () => {
     expect(day7star2('./inputs/test7')).toBe(168);
-    console.log(day7star2('./inputs/day7'));
   });
 
   it('exec day8star1', () => {
-    expect(day8star1('./inputs/test8')).toBe(168);
+    expect(day8star1('./inputs/test8')).toBe(26);
+  });
+  it('exec day8star2', () => {
+    expect(day8star2('./inputs/test8')).toBe(61229);
+    console.log(day8star2('./inputs/day8'));
   });
 
 });
