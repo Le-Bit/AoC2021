@@ -20,7 +20,6 @@ export function day6star1(filename: string, max: number): number {
     }
     pop[8] = newpop;
     pop[6] += newpop
-    console.log(pop);
   }
   return pop.reduce((a, b) => a + b);
 }
